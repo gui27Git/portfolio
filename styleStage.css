@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Numito:wght@600;700&display=swap');
+* {
+    font-family: 'Numito', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background-color: #00d2ff;
+    background-image: linear-gradient(to top, #00d2ff 0%, #3a7bd5 100%);
+}
+
+header nav div li a {
+    color: whitesmoke;
+    font-size: 1.25em;
+}
+
+header nav div li a:hover {
+    color: red;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+#Entreprise {
+    height: 1000px;
+    background-color: white;
+}
+
+.container-fluid {
+    box-sizing: border-box;
+}
+
+.container-fluid .container-fluid {
+    width: 800px;
+    position: absolute;
+    display: inline-block;
+}
+
+.container-fluid .container-fluid img {
+    position: relative;
+    float: left;
+}
+
+.container-fluid .container-fluid i {
+    font-size: 80px;
+    color: blue;
+    padding: 0 100px;
+}
+
+.container-fluid h3 {
+    padding: 50px 100px 0 0;
+}
+
+#img_CPcode {
+    position: relative;
+    float: right;
+}
+
+#interface {
+    position: relative;
+    float: right;
+    transform: translate(170px, -120px);
+}
+
+footer {
+    background-color: black;
+}

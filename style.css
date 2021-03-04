@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
+* {
+    font-family: 'Lora', serif;
+}
+
+#intro {
+    background-image: url("ressouces/font.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+}
+
+header nav div li a {
+    color: whitesmoke;
+    font-size: 1.25em;
+}
+
+header nav div li a:hover {
+    color: red;
+}
+
+#textIntro {
+    position: relative;
+    font-weight: 200;
+    font-size: 4em;
+    color: white;
+    letter-spacing: 0.1em;
+    text-shadow: 0 0 10px red, 0 0 20px red, 0 0 40px red, 0 0 80px red, 0 0 120px red;
+    transform: translateY(270px);
+}
+
+#parcours,
+#compétences {
+    background-color: #000;
+    height: auto;
+}
+
+#presentation {
+    height: auto;
+    background-color: #000;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+#presentation p {
+    line-height: 1.8;
+}
+
+#presentation p span {
+    animation: glow-in-up 0.08s both;
+}
+
+@keyframes glow-in-up {
+    from {
+        opacity: 0;
+    }
+    65% {
+        opacity: 1;
+        text-shadow: 0 0 25px white;
+    }
+    75% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.7;
+    }
+}
+
+.page-section {
+    padding: 1rem 0;
+    overflow-x: hidden;
+}
+
+
+/*defintion de la scrollbar*/
+
+body::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background-image: linear-gradient(to top, #32FAFA 0%, #EE0E5A 100%);
+}
+
+
+/*defintition de la timeline*/
+
+#parcours {
+    background-image: linear-gradient(to bottom, #222, #444);
+    color: #bbb;
+    padding: 1rem;
+    margin-top: 20px;
+    box-sizing: border-box;
+}  
+  .timeline {
+    position: relative;
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 1300px;
+  }
+  .timeline:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    border: 1px solid hotpink;
+    right: 40px;
+    top: 0;
+  }
+  .timeline:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  @media screen and (min-width: 700px) {
+    .timeline {
+      padding: 2rem;
+    }
+    .timeline:before {
+      left: calc(50% - 1px);
+      right: auto;
+    }
+  }
+  
+  .timeline__item {
+    padding: 1rem;
+    border: 2px solid hotpink;
+    border-image: linear-gradient(to right, skyblue 0%, hotpink 100%);
+    border-image-slice: 1;
+    position: relative;
+    margin: 1rem 3rem 1rem 1rem;
+    clear: both;
+  }
+  .timeline__item:after, .timeline__item:before {
+    content: "";
+    position: absolute;
+  }
+  .timeline__item:before {
+    right: -10px;
+    top: calc(50% - 5px);
+    border-style: solid;
+    border-color: hotpink hotpink transparent transparent;
+    border-width: 10px;
+    transform: rotate(45deg);
+  }
+  @media screen and (min-width: 700px) {
+    .timeline__item {
+      width: 44%;
+      margin: 1rem;
+    }
+    .timeline__item:nth-of-type(2n) {
+      float: right;
+      margin: 1rem;
+      border-image: linear-gradient(to right, hotpink 0%, skyblue 100%);
+      border-image-slice: 1;
+    }
+    .timeline__item:nth-of-type(2n):before {
+      right: auto;
+      left: -10px;
+      border-color: transparent transparent hotpink hotpink;
+    }
+  }
+  
+  .timeline__item--year {
+    text-align: center;
+    max-width: 150px;
+    margin: 0 48px 0 auto;
+    font-size: 1.8rem;
+    background-color: #333;
+    line-height: 1;
+    border-image: none;
+    padding: 0.5rem 1rem 1rem;
+  }
+  .timeline__item--year:before {
+    display: none;
+  }
+  @media screen and (min-width: 700px) {
+    .timeline__item--year {
+      text-align: center;
+      margin: 0 auto;
+    }
+    .timeline__item--year:nth-of-type(2n) {
+      float: none;
+      margin: 0 auto;
+      border-image: none;
+    }
+    .timeline__item--year:nth-of-type(2n):before {
+      display: none;
+    }
+  }
+  
+  .timeline__title {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5em;
+  }
+  
+  .timeline__blurb {
+    line-height: 1.5;
+    font-size: 1rem;
+    margin: 0.5rem 0 0;
+  }
+
+
+footer {
+    background-color: black;
+}

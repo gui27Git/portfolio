@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Mon stage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <!--Icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <!--CSS Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!--Mon CSS-->
+    <link href="styleStage.css" rel="stylesheet">
+    <!--jquery-->
+    <script src="ressouces/jquery-3.5.0.min.js"></script>
+    <!--js Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--Mon script-->
+    <script src="scriptStage.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a href="index.html" class="nav-link" aria-current="page">Profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="stage.html" class="nav-link" aria-current="page">Stage<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" aria-current="page">Veille</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" aria-current="page">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <h2 class="text-center text-primary text-lowercase">Stage de 2 année en BTS SIO</h2>
+    <p class="text-start text-center text-white-50">Mon stage de deuxieme année s'est déroulé auprès de l'entreprise CPcode et dont ma mission était de concevoir une application Android</p>
+    <div class="container-fluid" id="Entreprise">
+        <h3 class="justify-content-start text-primary text-decoration-underline">Entreprise</h3>
+        <div class="container-fluid">
+            <p class="text-black-50 text-break text-start">CPcode est une entreprise prestataire dont l’activité principale est la programmation de logiciel sur carte électronique avec microcontrôleurs qui existe depuis 13 ans et se situe actuellement Vienne en Isère.Ils sont en partenariat avec ARA
+                formation.
+            </p>
+            <h3 class="justify-content-start text-primary text-decoration-underline">Mon objectif</h3>
+            <p class="text-black-50 text-break text-start">L'objectif durant ce stage est de créer une application Android qui doit mesurer la connectivité en GSM Data et en wifi.En supplément elle doit pouvoir sauvegarder des données reçu dans un fichier.</p>
+            <p class="text-black-50 text-break text-center">Pour ce projet j'ai utilisé l'environnement de développement Android Studio avec le langage Java ainsi que Github pour la sauvegarde de code.</p>
+            <i class="fab fa-java"></i>
+            <i class="fab fa-github" style="color: black;"></i>
+            <img class="img-thumbnail img-fluid" src="ressouces/android_studio.png" alt="logo androidstudio" width="15%" height="15%">
+            <h3 class="justify-content-start text-primary text-decoration-underline">Bilan</h3>
+            <p class="text-break text-black-50 text-start">A la fin de la période du stage j'ai réussi à construire une application fonctionnelle en remplissant la plupart des termes du cahier des charges.</p>
+            <img class="img-fluid img-thumbnail" src="ressouces/gitub_stage.PNG" width="50%" height="50%">
+            <img class="img-thumbnail img-fluid" src="ressouces/Grant_stage.PNG" width="50%" height="50%">
+            <img class="img-fluid img-thumbnail" id="interface" src="ressouces/interface_application.PNG" width="20%" height="15%">
+        </div>
+        <a href="https://www.cpcode.fr/"><img class="img-thumbnail img-fluid" src="ressouces/cpCode.png" alt="img stage" width="30%" height="30%" id="img_CPcode"></a>
+    </div>
+    <footer class="container-fluid text-center">
+        <p class="text-white-50"> &copy Copyright 2021 Guillaume Levasseur</p>
+        <a href="#"><i class="fab fa-github" style="color: whitesmoke;font-size: 75px;"></i></a>
+        <a href="#"><i class="fab fa-gitlab" style="color: yellowgreen;font-size: 75px;"></i></a>
+        <a href="#"><i class="fab fa-linkedin" style="color: rgb(12, 28, 121);font-size: 75px;"></i></a>
+        <a href="#guigui#7342"><i class="fab fa-discord" style="color:whitesmoke;font-size: 75px;"></i></a>
+    </footer>
+</body>
+
+</html>
