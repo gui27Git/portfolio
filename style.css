@@ -2,6 +2,9 @@
 * {
     font-family: 'Lora', serif;
 }
+body{
+  background-color: #333;
+}
 
 #intro {
     background-image: url("ressouces/font.jpg");
@@ -10,7 +13,6 @@
     background-position: center;
     height: 800px;
 }
-
 header nav div li a {
     color: whitesmoke;
     font-size: 1.25em;
@@ -32,13 +34,12 @@ header nav div li a:hover {
 
 #parcours,
 #compétences {
-    background-color: #000;
     height: auto;
 }
 
 #presentation {
     height: auto;
-    background-color: #000;
+    background-color: #333;
     display: inline-flex;
     flex-direction: column;
 }
@@ -86,7 +87,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     border-radius: 1rem;
-    background-image: linear-gradient(to top, #32FAFA 0%, #EE0E5A 100%);
+    background-image: linear-gradient(to top, #333 0%, #444 100%);
 }
 
 
@@ -197,7 +198,6 @@ body::-webkit-scrollbar-thumb {
   
   .timeline__title {
     margin: 0;
-    font-family: "Raleway", sans-serif;
     font-size: 1.5em;
   }
   
@@ -206,8 +206,3 @@ body::-webkit-scrollbar-thumb {
     font-size: 1rem;
     margin: 0.5rem 0 0;
   }
-
-
-footer {
-    background-color: black;
-}
