@@ -218,3 +218,13 @@ body::-webkit-scrollbar-thumb {
     font-size: 1rem;
     margin: 0.5rem 0 0;
 }
+
+
+
+
+
+
+/* autre page */
+ul li {
+    margin-right: 500px;
+}
