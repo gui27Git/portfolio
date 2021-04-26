@@ -91,6 +91,98 @@ body::-webkit-scrollbar-thumb {
     border-radius: 1rem;
     background-image: linear-gradient(to top, #333 0%, #444 100%);
 }
+/*debut competence */
+#compétences {
+    width: 100%;
+    height: 110vh;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 100px 0;
+    overflow-y: hidden;
+}
+
+.card {
+    position: relative;
+    max-width: 300px;
+    height: auto;
+    background: linear-gradient(-45deg, #fe0847, #feae3f);
+    border-radius: 15px;
+    margin: 0 0;
+    padding: 40px 40px;
+    -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.col-sm-3:nth-child(1) .card,
+.col-sm-3:nth-child(1) .card .title .fa {
+    background: linear-gradient(-45deg, #f403d1, #64b5f6);
+
+}
+
+.col-sm-3:nth-child(2) .card,
+.col-sm-3:nth-child(2) .card .title .fa {
+    background: linear-gradient(-45deg, #ffec61, #f321d7);
+
+}
+
+.col-sm-3:nth-child(3) .card,
+.col-sm-3:nth-child(3) .card .title .fa {
+    background: linear-gradient(-45deg, #24ff72, #9a4eff);
+
+}
+.col-sm-3:nth-child(4) .card,
+.col-sm-3:nth-child(4) .card .title .fa {
+    background: linear-gradient(-45deg, #7408f0, #f71ea4);
+
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: rgba(255, 255, 255, .1);
+    z-index: 1;
+    -webkit-transform: skewY(-5deg) scale(1.5);
+    transform: skewY(-5deg) scale(1.5);
+}
+
+.title h3 i {
+    color: #fff;
+    font-size: 60px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+
+}
+.option {
+    position: relative;
+    z-index: 2;
+}
+.option ul {
+    margin: 0;
+    padding: 0;
+
+}
+.option ul li {
+    margin: 0 0 10px;
+    padding: 0;
+    list-style: none;
+    color: #fff;
+    font-size: 16px;
+}
+.option ul li , .option ul li img{
+    margin-right: 5%;
+}
+/*fin competence*/
 
 
 /*defintition de la timeline*/
@@ -218,6 +310,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 1rem;
     margin: 0.5rem 0 0;
 }
+/*fin timeline */
 
 
 
