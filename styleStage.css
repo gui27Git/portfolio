@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Numito:wght@600;700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
 * {
-    font-family: 'Numito', sans-serif;
+    font-family: 'Lora', serif;
     box-sizing: border-box;
 }
 
 body {
-    background-color: black;
+    background-image: linear-gradient(to top, rgb(121, 116, 116), rgb(243, 237, 237));
 }
 
 body::-webkit-scrollbar {
     width: 5px;
+    height: 5px;
 }
 
 body::-webkit-scrollbar-track {
@@ -18,17 +19,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     border-radius: 1rem;
-    background-color: #00d2ff;
-    background-image: linear-gradient(to top, #00d2ff 0%, #3a7bd5 100%);
-}
-
-header nav div li a {
-    color: whitesmoke;
-    font-size: 1.25em;
-}
-
-header nav div li a:hover {
-    color: red;
+    background-image: linear-gradient(to top, #333 0%, #444 100%);
 }
 
 h2 {
@@ -36,8 +27,7 @@ h2 {
 }
 
 #Entreprise {
-    height: 1000px;
-    background-color: white;
+    height: 1500px;
 }
 
 .container-fluid {
@@ -70,12 +60,14 @@ h2 {
     float: right;
 }
 
+#android {
+    position: relative;
+    float: right;
+    transform: translate(370px, 250px);
+}
+
 #interface {
     position: relative;
     float: right;
-    transform: translate(170px, -120px);
-}
-
-footer {
-    background-color: black;
+    transform: translate(10px, -80px);
 }

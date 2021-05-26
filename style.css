@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #333;
+    background-image: linear-gradient(to top, rgb(121, 116, 116), rgb(243, 237, 237));
 }
 
 #intro {
@@ -15,12 +15,18 @@ body {
     height: 800px;
 }
 
-header nav div li a {
-    color: whitesmoke;
+.nav-item {
+    color: rgb(1, 13, 17);
     font-size: 1.25em;
+    margin: 0 5px 10px 10px;
+    padding: 0 5px 10px 10px;
 }
 
-header nav div li a:hover {
+.nav-item.active {
+    margin: auto;
+}
+
+.nav-item:hover {
     color: red;
 }
 
@@ -41,7 +47,6 @@ header nav div li a:hover {
 
 #presentation {
     height: auto;
-    background-color: #333;
     display: inline-flex;
     flex-direction: column;
 }
@@ -76,6 +81,48 @@ header nav div li a:hover {
 }
 
 
+/*button*/
+
+.container-cv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-cv {
+    text-decoration: none;
+    border: 1px solid rgb(146, 148, 248);
+    position: relative;
+    overflow: hidden;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    color: #f4f4f4;
+    text-transform: uppercase;
+}
+
+.btn-cv:hover {
+    box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+}
+
+.btn-cv:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( 120deg, transparent, rgba(146, 148, 248, 0.4), transparent);
+    transition: all 650ms;
+}
+
+.btn-cv:hover:before {
+    left: 100%;
+}
+
+
+/*fin button */
+
+
 /*defintion de la scrollbar*/
 
 body::-webkit-scrollbar {
@@ -91,7 +138,10 @@ body::-webkit-scrollbar-thumb {
     border-radius: 1rem;
     background-image: linear-gradient(to top, #333 0%, #444 100%);
 }
+
+
 /*debut competence */
+
 #compétences {
     width: 100%;
     height: 110vh;
@@ -118,24 +168,21 @@ body::-webkit-scrollbar-thumb {
 .col-sm-3:nth-child(1) .card,
 .col-sm-3:nth-child(1) .card .title .fa {
     background: linear-gradient(-45deg, #f403d1, #64b5f6);
-
 }
 
 .col-sm-3:nth-child(2) .card,
 .col-sm-3:nth-child(2) .card .title .fa {
     background: linear-gradient(-45deg, #ffec61, #f321d7);
-
 }
 
 .col-sm-3:nth-child(3) .card,
 .col-sm-3:nth-child(3) .card .title .fa {
     background: linear-gradient(-45deg, #24ff72, #9a4eff);
-
 }
+
 .col-sm-3:nth-child(4) .card,
 .col-sm-3:nth-child(4) .card .title .fa {
     background: linear-gradient(-45deg, #7408f0, #f71ea4);
-
 }
 
 .card::before {
@@ -161,17 +208,18 @@ body::-webkit-scrollbar-thumb {
     line-height: 100px;
     -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
     box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
-
 }
+
 .option {
     position: relative;
     z-index: 2;
 }
+
 .option ul {
     margin: 0;
     padding: 0;
-
 }
+
 .option ul li {
     margin: 0 0 10px;
     padding: 0;
@@ -179,16 +227,19 @@ body::-webkit-scrollbar-thumb {
     color: #fff;
     font-size: 16px;
 }
-.option ul li , .option ul li img{
+
+.option ul li,
+.option ul li img {
     margin-right: 5%;
 }
+
+
 /*fin competence*/
 
 
 /*defintition de la timeline*/
 
 #parcours {
-    background-image: linear-gradient(to bottom, #222, #444);
     color: #bbb;
     padding: 1rem;
     margin-top: 20px;
@@ -310,14 +361,39 @@ body::-webkit-scrollbar-thumb {
     font-size: 1rem;
     margin: 0.5rem 0 0;
 }
+
+
 /*fin timeline */
 
 
+/*réalisations index */
+
+.filters .active {
+    background-color: rgb(212, 64, 19);
+}
+
+.card-realisation {
+    position: relative;
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+    margin: 0 20px;
+    padding: 40px 40px;
+    background-color: whitesmoke;
+}
+
+.card-realisation:hover {
+    z-index: 12;
+    transform: translateY(-12px);
+    box-shadow: rgb(100, 100, 100);
+}
 
 
+/* Fin réalisatons */
 
 
 /* autre page */
+
 ul li {
     margin-right: 500px;
 }

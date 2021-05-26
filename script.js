@@ -2,28 +2,30 @@ $(document).ready(function() {
     if ($(window).width() > 992) {
         $(window).scroll(function() {
             if ($(this).scrollTop() > 35) {
-                $('#navbar').addClass('fixed-top');
-                $('#navbar').css('background-color', 'gray');
-                $('#navbar').css('opacity', '0.5');
+                $('.navbar').css('background-color', 'gray');
+                $('.navbar').css('opacity', '0.5');
             } else {
-                $('#navbar').removeClass('fixed-top');
-                $('#navbar').css('opacity', '1');
-                $('#navbar').css('background-color', 'transparent');
+                $('.navbar').css('opacity', '1');
+                $('.navbar').css('background-color', 'transparent');
             }
         });
     }
+    $(".filters .btn").click(function() {
+        if ($(this).hasClass("stage")) {
+            $(".btn").removeClass("active");
+            $(this).addClass("active");
 
-    "use strict";
-    let glowInText = document.querySelectorAll("#presentation p");
-    glowInText.forEach(glowInText => {
-        let letters = glowInText.textContent.split("");
-        glowInText.textContent = "";
-        letters.forEach((letter, i) => {
-            let span = document.createElement("span");
-            span.textContent = letter;
-            span.style.animationDelay = `${i*0.05}s`;
-            glowInText.append(span);
-
-        })
-    })
+            $(".card-realisation").show("fast");
+            $(".card-realisation.bts").hide("fast");
+        } else if ($(this).hasClass("bts")) {
+            $(".btn").removeClass("active");
+            $(this).addClass("active");
+            $(".card-realisation").show("fast");
+            $(".card-realisation.stage").hide("fast");
+        } else {
+            $(".btn").removeClass("active");
+            $(this).addClass("active");
+            $(".card-realisation").show("fast");
+        }
+    });
 });
