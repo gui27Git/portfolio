@@ -397,3 +397,28 @@ body::-webkit-scrollbar-thumb {
 ul li {
     margin-right: 500px;
 }
+.img-gedimat{
+    position: relative;
+    float: right;
+    transform: translateY(-300px);
+}
+.img-shema{
+    transform: translateX(50%);
+}
+.img-admin{
+    position: relative;
+    float: right;
+    transform: translateY(-250px);
+}
+.img-andr{
+    position: relative;
+    float: right;
+    transform: translate(-300px,-290px);
+}
+.img-right{
+    position: relative;
+    float: right;
+}
+.img-margin{
+    padding: 20px 20px 20px 20px;
+}

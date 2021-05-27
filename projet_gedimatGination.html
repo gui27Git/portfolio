@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Gedima'Gination</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <!--Icon library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <!--CSS Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!--Mon CSS-->
+    <link href="style.css" rel="stylesheet">
+    <!--jquery-->
+    <script src="ressouces/jquery-3.5.0.min.js"></script>
+    <!--js Bootstrap-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1 class="text-center text-primary text-decoration-underline">Projet Gedima'Gination</h1>
+    <div class="container-fluid">
+        <div class="container">
+            <p class="text-break text-dark">Gedima'Gination est un concours organisée par la société Gedimat dont le but
+                est de poster des photos de réalisation récente des clients de la société.</p>
+            <p class="text-break text-dark">Et dans un deuxieme temps proposer de voter aux clients pour trois
+                réalisations.</p>
+            <p class="text-dark text-break">Le projet comprend 2 type d'application:</p>
+            <ul class="text-dark">
+                <li>Un application web</li>
+                <li>Une application mobile</li>
+            </ul>
+            <p class="text-dark text-break">Pour participer au concours,les personnes doivent etre client actuel de la
+                société Gedimat et s'inscrire sur l'application web pour ensuite poster réalisation de leur choix
+                pendant la période d'inscription.</p>
+            <p class="text-break text-dark">Dans la deuxieme partie du concours,lors de la période de vote,les clients
+                doivent éffectué un achat dans une boutique partenaire avant d'utliser l'identifiant sur le ticket de
+                caisse pour pouvoir voter sur la borne à la sortie de la boutique.</p>
+        </div>
+        <img class="img-fluid img-gedimat" src="ressouces/logo-gedimat.png" alt="gedimat'gination">
+        <div class="container-fluid">
+            <img class="img-fluid img-shema" src="ressouces/schemaArchitecture_gedima.png" width="50%" height="50%">
+        </div>
+        <div class="container">
+            <h3 class="text-dark text-decoration-underline">Application web</h3>
+            <p class="text-break text-dark">L'application web est accessible depuis n'importe quel
+                terminal.L'application web permet un accès client et un accès gestionnaire.</p>
+            <p class="text-dark text-decoration-underline text-break">Le gestionnaire peut depuis l'application web:</p>
+            <ul class="text-dark">
+                <li>Modifier les dates du concours</li>
+                <li>Choisir d'afficher ou non le classement des réalisations</li>
+                <li>avoir les même droits que ceux d'un client</li>
+            </ul>
+            <p class="text-dark text-decoration-underline text-break">Un client peut sur l'application web:</p>
+            <ul class="text-dark">
+                <li>S'inscrire/se connecter</li>
+                <li>Poster une réalisation</li>
+                <li>consulter les résultats de sa réalisation</li>
+                <li>consulter les classement des réalisations</li>
+            </ul>
+        </div>
+        <img class="img-fluid img-admin" src="ressouces/accueilAdmin.png" width="50%" height="100%">
+        <div class="container">
+            <h3 class="text-dark text-decoration-underline">Application mobile</h3>
+            <p class="text-break text-dark">L'application mobile est accessible depuis n'importe quel
+                terminal.L'application mobile permet un accès client et un accès gestionnaire.</p>
+            <p class="text-dark text-decoration-underline text-break">Le gestionnaire peut depuis l'application mobile:
+            </p>
+            <ul class="text-dark">
+                <li>Importer les données du concours</li>
+                <li>Exporter les données du concours</li>
+                <li>avoir les même droits que ceux d'un client</li>
+            </ul>
+            <p class="text-dark text-decoration-underline text-break">Un client peut sur l'application mobile:</p>
+            <ul class="text-dark">
+                <li>Saisir l'identifiant du ticket ainsi que son nom,prenom et mail</li>
+                <li>Voter un nombre de Gaime pour une réalisation</li>
+            </ul>
+            <img class="img-fluid img-andr" src="ressouces/accueil_mobil.jpg" width="200px" height="50px">
+        </div>
+        <div class="container-fluid">
+            <h3 class="text-dark text-decoration-underline">Gestion du projet</h3>
+            <p class="text-break text-dark">Cette solution a été réalisé en équipe avec Vessella Aymeric.</p>
+            <p class="text-dark text-break">Elle a été produit dans un cadre fictif et uniquement à un but éducatif.</p>
+            <p class="text-break text-dark">Elle s'est réalisé dans la démarche agile ,découpé en plusieurs sprints
+                effectué chaque semaine.</p>
+            <p class="text-dark text-break">Pour ce projet ,on a majoritairement développé une application pour chaqu'un
+                :j'ai crée l'application Android et Aymeric l'application web.</p>
+        </div>
+        <div class="container">
+            <h3 class="text-dark text-decoration-underline">Technologie utilisé</h3>
+            <ul class="text-dark">
+                <li>Laragon</li>
+                <li>postMan</li>
+                <li>JMersie</li>
+                <li>Github</li>
+                <li>Android studio</li>
+                <li>HtML/CSS/JavaScript</li>
+                <li>PHP</li>
+                <li>Java</li>
+                <li>SQL</li>
+            </ul>
+        </div>
+        <div class="container-fluid">
+            <h3 class="text-dark text-decoration-underline">Resultat final</h3>
+            <h5 class="text-decoration-underline text-dark">Interface web</h5>
+            <img class="img-fluid img-margin" src="ressouces/accueilAdmin.png" width="50%">
+            <img class="img-fluid img-right" src="ressouces/realisation.png" width="50%">
+            <img class="img-fluid img-margin" src="ressouces/classementGlobale.png" width="50%">
+
+            <h5 class="text-dark text-decoration-underline">Interface mobile</h5>
+            <img class="img-fluid img-margin" src="ressouces/accueil_mobil.jpg" width="25%" height="15px">
+            <img class="img-fluid img-margin" src="ressouces/img_ticket.jpg" width="25%" height="15px">
+            <img class="img-fluid img-margin" src="ressouces/vote_gaime.jpg" width="25%" height="15px">
+
+        </div>
+    </div>
+</body>
+
+</html>
