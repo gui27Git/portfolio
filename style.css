@@ -395,8 +395,14 @@ body::-webkit-scrollbar-thumb {
 /* autre page */
 
 ul li {
-    margin-right: 500px;
+    margin-right: 400px;
 }
+.margin{
+    margin-right: 100px;
+}
+
+
+
 .img-gedimat{
     position: relative;
     float: right;
