@@ -8,7 +8,7 @@ body {
 }
 
 #intro {
-    background-image: url("ressouces/pexels-instawalli-169789.jpg");
+    background-image: url("ressouces/pexels-dmitriy-ganin-8774329.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -232,6 +232,8 @@ body::-webkit-scrollbar-thumb {
 .option ul li img {
     margin-right: 5%;
 }
+.iconify { width: 24px; height: 24px; }
+
 
 
 /*fin competence*/
